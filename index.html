@@ -1,12 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trilha de CSS - DIO</title>
+  <link rel="stylesheet" type="text/css" href="#base.css">
+  <style>
+    body {
+      background-color: black;
+    }
+
+    * {
+      font-family: sans-serif;
+      padding: 0%;
+      margin: 0%;
+    }
+
+    h2 {
+  color: #33A8DB;
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+
+p {
+  color: white;
+}
+
+section {
+  margin: 100px auto;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(25, 132, 204, 0.2), rgba(0, 0, 0, .6)), url(assets/images/banner.png);
+  background-repeat: no-repeat;
+  height: 780px;
+  padding-top: 70px;
+  border-bottom: 1px solid #268fbd80;
+}
+
+.banner .banner-content {
+  text-align: center;
+  color: white;
+  width: 600px;
+  margin: auto;
+}
+
+.banner h1 {
+  font-size: 36px;
+  font-weight: 900;
+  color:  #1a84cf;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  margin: 16px 0 24px;
+}
+
+.banner .logo {
+  background-color: rgba(0, 0, 0, 0.232);
+  height: 260px;
+  width: 260px;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.banner .logo img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.banner .banner-content button {
+  color: #31A8DD;
+  border: 3px solid #1a84cf;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 15px 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border-image-slice: 10;
+  cursor: pointer;
+  transition: 0.3s all;
+  border-radius: 10px;
+  box-shadow: 0px 10px 40px -12px #1a84cf31;
+}
+
+.banner .banner-content button:hover {
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .9);
+    text-shadow: 0 0 5px #1a84cf;
+    cursor: pointer;
+ transition: 0.3s all;
+    box-shadow: 0 0 20px #1a84cfc1, inset 0 0 5px #1a84cfc2; 
+  }
+
+#course-content {
+  width: 800px;
+  text-align: center;
+}
+
+#course-content .modules-list .module {
+ box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .9);
+  color: white;
+  width: 530px;
+  margin: 0 auto 22px;
+  border: 1px solid #3ebaef;
+  background-color: #252525;
+  padding: 13px;
+  border-radius: 100px;
+}
+
+#course-content .modules-list .module:hover {
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .9);
+     color: white;
+     cursor: pointer;
+  transition: 0.3s all;
+     box-shadow: 0 0 15px #1a84cf, inset 0 0 5px #1a84cf;
+     background-color:#1a84cf25;
+     text-shadow: 0 0 2px #0c5b94; 
+   }
+
+#course-content .modules-list .module span {
+  color: #33A8DB;
+}
+
+#course-content .modules-list {
+    margin: 24px 0;
+  }
+
+#transform-world {
+    border-top: 1px solid #33A8DB80;
+  border-bottom: 1px solid #33A8DB80;
+  padding: 190px;
+  height: 80px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("assets/images/woman-code.png");
+}
+
+#transform-world p {
+  font-weight: 900;
+  font-size: 40px;
+  max-width: 280px;
+  text-transform: lowercase;
+  text-shadow: 5px 1px #33a8db;
+}
+
+#professional-challenges {
+  text-align: center;
+  width: 800px;
+}
+
+#professional-challenges img {
+  margin: 32px 0;
+}
+
+footer {
+  border-top: 1px solid #33A8DB80;
+  padding: 56px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(51, 154, 199, 0), rgba(24, 156, 212, 0.2));
+}
+
+footer .dio-logo {
+  width: 350px;
+}
+
+footer a {
+  color: #33A8DB;
+  text-decoration: none;
+}
+
+ </style>
 </head>
-<body>
+
+<body id=".body">
   <header class="banner">
     <div class="banner-content">
       <div class="logo">
